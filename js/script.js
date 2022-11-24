@@ -132,7 +132,7 @@ function addtoCart(event){
 
         axios.post("http://localhost:5555/cart/add-product",cart)
         .then((res)=>{
-            console.log(data);
+            console.log(res);
             if(res.data.alreadyExisting==true){
                 window.alert('Product is Already In the Cart');
                 
